@@ -14,3 +14,6 @@ Experimentation:
 First experiment is to implement gradient descent algorithm in the dataset. I initially scaled the dataset using standard scalar from sklearn. Then the dataset has been split into test and train split with split percentage of 70 as training data and 30 as testing data.
 GPU RUNTIME =𝛽0+𝛽1∗x1+𝛽2∗x2+𝛽3∗x3+𝛽4∗x4+𝛽5∗x5+ 𝛽6∗x6+𝛽7∗x7+𝛽8∗x8+𝛽9∗x9+𝛽10∗x10+𝛽11∗x11+𝛽12∗x12+𝛽13∗x13+𝛽14∗x14
 I selected the following learning rates to run the algorithm 0.001,0.003,0.006,0.1. And the results were plotted as functions of alpha and cost of test and train of the samples taken from the dataset.
+
+Part B
+Now the gradient decent algorithm is implemented with the logistic regression model. By using gradient decent optimum cost is calculated. The sigmoid function was calculated by the formula 1 / (1 + np.exp(-x)) to calculate the gradient decent as to obtain the output between 0 or 1. Our current prediction function returns a probability score between 0 and 1. In order to map this to a discrete class, we select a threshold value or tipping point as the median of the runtime above which we will classify values into 1 or 0. 
